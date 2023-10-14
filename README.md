@@ -20,6 +20,6 @@ Makes your car faster. if you use the tunerchip item.
 1. Clone the GitHub repository into your `resources` directory.
    ```bash
    git clone https://github.com/Zaps6000/zaps_tuner.git
-```
+
 
 Support: https://discord.gg/cfxdev
