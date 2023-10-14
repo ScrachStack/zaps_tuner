@@ -1,7 +1,7 @@
 if GetResourceState('es_extended') ~= 'missing' then
-    esx = false 
+    esx = true 
 else 
-    esx = true
+    esx = false
 end
 if esx then 
 ESX = exports["es_extended"]:getSharedObject()
