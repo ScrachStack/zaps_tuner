@@ -1,3 +1,4 @@
+-- https://discord.gg/cfxdev for support
 Config = {}
 
 Config.Locale = 'en'
