@@ -7,8 +7,9 @@ AddEventHandler('zaps:useChip', function()
     if vehicle and vehicle ~= 0 then
         local plate = GetVehicleNumberPlateText(vehicle)
         local speed = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel')
-        SetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel', speed + 50.0)
-
+        local vehicleClass = GetVehicleClass(vehicle)
+        local speedModifier = Config.SpeedModifiers[tostring(vehicleClass)]
+        SetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel', speed + speedModifier)
         lib.notify({
             title = 'Tuner Chip',
             description = string.format(Locales[Config.Locale]['chip_used'], plate),
