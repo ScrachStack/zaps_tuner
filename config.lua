@@ -4,7 +4,8 @@ Config = {}
 Config.Locale = 'en'
 
 Config.Item = 'tunerchip' -- Tuner Chip Item Name
-
+Config.UsePlateChangeCommand = true -- [true/false]
+Config.PlateBlacklist = {"faggot", "nigger", "queer", "kkk", "nazi", "eulen"}
 Config.SpeedModifiers = {
     ['0'] = 100.0,  -- Compacts
     ['1'] = 200.0,  -- Sedans
