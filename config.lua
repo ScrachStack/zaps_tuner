@@ -5,6 +5,18 @@ Config.Locale = 'en'
 
 Config.Item = 'tunerchip' -- Tuner Chip Item Name
 
+Config.SpeedModifiers = {
+    ['0'] = 100.0,  -- Compacts
+    ['1'] = 200.0,  -- Sedans
+    ['2'] = 300.0,  -- SUVs
+    ['3'] = 400.0,  -- Coupes
+    ['4'] = 500.0,  -- Muscle
+    ['5'] = 600.0,  -- Sports Classics
+    ['6'] = 700.0,  -- Sports
+    ['7'] = 800.0,  -- Super
+}
+
+
 
 Locales = {
     ['en'] = {
