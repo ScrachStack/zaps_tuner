@@ -1,3 +1,42 @@
+RegisterNetEvent('zaps:useChip')
+AddEventHandler('zaps:useChip', function()
+    local playerPed = PlayerPedId()
+    local vehicle = GetVehiclePedIsIn(playerPed, false)
+
+    if vehicle and vehicle ~= 0 then
+        local plate = GetVehicleNumberPlateText(vehicle)
+        local speed = GetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel')
+        local vehicleClass = GetVehicleClass(vehicle)
+        local speedModifier = Config.SpeedModifiers[tostring(vehicleClass)]
+        SetVehicleHandlingFloat(vehicle, 'CHandlingData', 'fInitialDriveMaxFlatVel', speed + speedModifier)
+        lib.notify({
+            title = 'Tuner Chip',
+            description = string.format(Locales[Config.Locale]['chip_used'], plate),
+            position = 'top',
+            style = {
+                backgroundColor = '#141517',
+                color = '#C1C2C5',
+            },
+            icon = 'speedometer',
+            iconColor = '#29a329'
+        })
+
+    else
+        lib.notify({
+            title = 'Tuner Chip',
+            description = Locales[Config.Locale]['no_vehicle'],
+            position = 'top',
+            style = {
+                backgroundColor = '#141517',
+                color = '#C1C2C5',
+            },
+            icon = 'ban',
+            iconColor = '#C53030'
+        })
+    end
+end)
+
+
 if Config.UsePlateChangeCommand then 
 RegisterCommand('changeplate', function()
     local input = lib.inputDialog('Change Plate', { {type = 'input', label = 'Enter your plate', required = true, min = 1, max = 8} })
