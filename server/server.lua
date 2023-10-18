@@ -1,3 +1,4 @@
+if not standalone then
 if esx then 
 ESX.RegisterUsableItem(Config.Item, function(source)
     TriggerClientEvent('zaps:useChip', source)
@@ -8,3 +9,4 @@ else
         TriggerClientEvent('zaps:useChip', source)
     end)
 end 
+end
