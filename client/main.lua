@@ -104,3 +104,9 @@ RegisterCommand('changeplate', function()
     end
 end, false)
 end
+
+if standalone then 
+RegisterCommand('tunerchip', function()
+        TriggerEvent('zaps:useChip')
+        end, false)
+end
