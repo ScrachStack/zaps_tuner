@@ -11,8 +11,7 @@ Makes your car faster. if you use the tunerchip item.
 
 ## Prerequisites
 
-- FiveM server
-- ESX v1+/v2+ or QB-Core
+- FiveM server 
 - OX_LIB for notifications
 
 ## Installation
