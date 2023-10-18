@@ -5,7 +5,7 @@ Makes your car faster. if you use the tunerchip item.
 ## Features
 
 - Enhance vehicle speed with a tuner chip.
-- Compatible with ESX and QB-Core frameworks.
+- Compatible with ESX and QB-Core frameworks. & Standalone (Check Framework file to add support for your framework.)
 - Supports translations via config file.
 - Uses OXLIB for notifications.
 
