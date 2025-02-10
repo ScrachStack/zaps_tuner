@@ -2,6 +2,10 @@
 
 ## Description
 Makes your car faster. if you use the tunerchip item.
+
+[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/Uwg95JfwYT) 
+
+
 ## Features
 
 - Enhance vehicle speed with a tuner chip.
@@ -22,4 +26,3 @@ Makes your car faster. if you use the tunerchip item.
 2. Add Insert.sql only for esx servers
 3.  Add inventory image to inventory resource.
 
-Support: https://discord.gg/cfxdev
