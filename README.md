@@ -3,7 +3,7 @@
 ## Description
 Makes your car faster. if you use the tunerchip item.
 
-=[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T01APGOO)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T01APGOO)
 
 ## Features
 
