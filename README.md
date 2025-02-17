@@ -3,8 +3,7 @@
 ## Description
 Makes your car faster. if you use the tunerchip item.
 
-[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/Uwg95JfwYT) 
-
+=[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/T6T01APGOO)
 
 ## Features
 
